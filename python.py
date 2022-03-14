@@ -8,15 +8,15 @@ class User:
 
     def make_withdrawal(self,amount):
         self.amount -=amount
-        return self
+        return self  #chaining 
 
     def make_deposit(self,amount):
         self.amount +=amount
-        return self
+        return self   #chaining
 
     def display_user_balance(self):
         print(f"User: {self.name}, Balance: {self.amount}")
-        return self
+        return self   #chaining
 
     def transfer_money(self,amount,user):
         self.amount -= amount
